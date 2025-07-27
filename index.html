@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phim Online</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-900 text-white shadow">
+        <div class="header_banner mx-auto px-4 py-3 flex items-center justify-between">
+
+            <div class="header_logo">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html"><img src="assets/thumbnails/logo.jpg" alt="Logo" class="h-20 w-auto object-contain"/></a>
+                    <div>
+                        <h1 class="text-xl font-bold tracking-wide">
+                        <a href="index.html"><span class="text-red-500">CHILL</span>X</a>
+                        </h1>
+                        <span class="text-sm text-gray-300 tracking-widest">XEM PHIM ONLINE</span>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="header_search flex-1 mx-8 max-w-xl">
+                <div class="relative">
+                    <input type="text" placeholder="Nhập tên phim bạn muốn tìm kiếm..." 
+                    class="w-full px-4 py-2 rounded-lg bg-white text-black focus:outline-none" />
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-700 hover:text-black">
+                    🔍
+                    </button>
+                </div>
+            </div>
+            
+            <div class="header_right flex items-center space-x-4 text-sm">
+            <a href="#" class="hover:text-red-500 flex items-center gap-1">Đăng nhập</a>
+            <a href="#" class="hover:text-red-500 flex items-center gap-1">Đăng ký</a>
+            <a href="#" class="hover:text-red-500 flex items-center gap-1">Bookmark</a>
+            </div>
+        </div>
+
+        <nav class="header_menu bg-gray-800">
+          <div class="header_menu_container max-w-7xl mx-auto px-4">
+            <ul class="flex space-x-6 text-sm font-semibold text-white py-3">
+                <li><a href="#" class="hover:text-red-500">TRANG CHỦ</a></li>
+
+                 <!-- Dropdown: THỂ LOẠI -->
+                <li class="relative" id="dropdownGenre">
+                    <button onclick="toggleDropdown('genreMenu')" class="hover:text-red-500">THỂ LOẠI ▾</button>
+                    <ul id="genreMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
+                        onmouseenter="cancelClose('genreMenu')" onmouseleave="closeDropdown('genreMenu')">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hành động</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Tình cảm</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hài hước</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown: QUỐC GIA -->
+                <li class="relative" id="dropdownNation">
+                    <button onclick="toggleDropdown('nationMenu')" class="hover:text-red-500">QUỐC GIA ▾</button>
+                    <ul id="nationMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
+                        onmouseenter="cancelClose('nationMenu')" onmouseleave="closeDropdown('nationMenu')">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Việt Nam</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hàn Quốc</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Mỹ</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class="hover:text-red-500">PHIM NỔI BẬT</a></li>
+                <li><a href="#" class="hover:text-red-500">PHIM CHIẾU RẠP</a></li>
+                <li><a href="#" class="hover:text-red-500">PHIM BỘ</a></li>
+                <li><a href="#" class="hover:text-red-500">PHIM LẺ</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <section class="phim_noi_bat">
+        <h1 class="text-3xl font-bold text-center my-8">Phim nổi bật</h1>
+        <div id="movie-list" class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto px-4"></div>
+    </section>
+
+    <section class="phim_moi_chieu_rap">
+        <h1 class="text-3xl font-bold text-center my-8">Phim mới chiếu rạp</h1>
+        <div id="movie-list" class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto px-4"></div>
+    </section>
+
+    <section class="phim_bo">
+        <h1 class="text-3xl font-bold text-center my-8">Phim bộ</h1>
+        <div id="movie-list" class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto px-4"></div>
+    </section>
+
+    <section class="phim_anime">
+        <h1 class="text-3xl font-bold text-center my-8">Phim Anime</h1>
+        <div id="movie-list" class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto px-4"></div>
+    </section>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
