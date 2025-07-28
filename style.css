@@ -15,32 +15,6 @@
     font-size: 16px;
     text-align: center; 
 }
-
-.header_menu{
-    
-}
-
-.dropdown_container{
-    position: relative;
-}
-.dropdown_list{
-  position: absolute;     
-  top: 100%;                
-  left: 0;                
-  z-index: 10;              
-  margin-top: 0.5rem;      
-  width: 12rem;           
-  background-color: #1f2937; 
-  border-radius: 0.5rem;    
-  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-  display: none;
-  transition: opacity 0.2s ease;
-  opacity: 0;
-  pointer-events: none;           
-}
-
-.dropdown_container:hover .dropdown_list {
-  display: block;
-  opacity: 1;
-  pointer-events: auto;
+.movie:hover .play_button{
+    display: block;
 }
