@@ -5,7 +5,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/ironman.jpg",
     tyle:"Khoa học viễn tưởng, hành động",
     native:"Mỹ",
-    video: "https://www.youtube.com/watch?v=KAE5ymVLmZg"
+    video: "",
+    trailer:"https://www.youtube.com/embed/8ugaeA-nMTc"
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/endgame.jpg",
     tyle:"Khoa học viễn tưởng, hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "../../assets/videos/end_game_trailer.mp4",
+    trailer:""
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/infinity_war.jpg",
     tyle:"Khoa học viễn tưởng, hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/k2b2Jb24hQc"
   },
   {
     id: 4,
@@ -29,7 +32,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/a_moment_to_remember.jpg",
     tyle:"Tình cảm",
     native:"Hàn Quốc",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/LFLSwFEiANg"
   },
   {
     id: 5,
@@ -37,7 +41,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/amélie.jpg",
     tyle:"Tình cảm",
     native:"Pháp",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/Py7cDXQae2U"
   },
   {
     id: 6,
@@ -45,7 +50,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/call_me_by_your_name.jpg",
     tyle:"tình cảm",
     native:"Ý",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/bXIHgcJbr0U"
   },
   {
     id: 7,
@@ -53,7 +59,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/la_la_land.jpg",
     tyle:"tình cảm",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/M4NsMzGjFco"
   },
   {
     id: 8,
@@ -61,7 +68,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/one_day.jpg",
     tyle:"tình cảm",
     native:"Anh",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:""
   },
   {
     id: 9,
@@ -69,7 +77,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/pride_and_prejudice.jpg",
     tyle:"tình cảm",
     native:"Anh",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/Ur_DIHs92NM"
   },
   {
     id: 10,
@@ -77,7 +86,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/romeo_and_juliet.jpg",
     tyle:"tình cảm",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/FHfIzTSUpz4"
   },
   {
     id: 11,
@@ -85,7 +95,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/secret.jpg",
     tyle:"tình cảm",
     native:"Đài Loan",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/DTDuOkNSJA4"
   },
   {
     id: 12,
@@ -93,7 +104,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/spider-man_far_from_home.jpg",
     tyle:"Khoa học viễn tưởng, hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/DYYtuKyMtY8"
   },
   {
     id: 13,
@@ -101,7 +113,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/spider-man_homecoming.jpg",
     tyle:"Khoa học viễn tưởng, hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/U0D3AOldjMU"
   },
   {
     id: 14,
@@ -109,7 +122,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/spider-man_no_way_home.jpg",
     tyle:"Khoa học viễn tưởng, hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/JfVOs4VSpmA"
   },
   {
     id: 15,
@@ -117,7 +131,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/the_note_book.jpg",
     tyle:"Tình cảm",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/BjJcYdEOI0k"
   },
   {
     id: 16,
@@ -125,7 +140,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/titanic.jpg",
     tyle:"Tình cảm",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/kVrqfYjkTdQ"
   },
   {
     id: 17,
@@ -133,7 +149,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/your_name.jpg",
     tyle:"Tình cảm, Anime",
     native:"Nhật Bản",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/xU47nhruN-Q"
   },
   {
     id: 18,
@@ -141,7 +158,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/godzilla_kong_the_new_empire.jpg",
     tyle:"Khoa học viễn tưởng, Hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/lV1OOlGwExM"
   },
   {
     id: 19,
@@ -149,7 +167,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/lat_mat_7.jpg",
     tyle:"Hài, tình cảm",
     native:"Việt Nam",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/d1ZHdosjNX8"
   },
   {
     id: 20,
@@ -157,7 +176,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/inside_out_2.jpg",
     tyle:"Khoa học viễn tưởng, Anime",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/LEjhY15eCx0"
   },
   {
     id: 21,
@@ -165,7 +185,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/a_quiet_place_day_one.jpg",
     tyle:"Khoa học viễn tưởng, Kinh dị",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/YPY7J-flzE8"
   },
   {
     id: 22,
@@ -173,7 +194,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/a_quiet_place_1.jpg",
     tyle:"Khoa học viễn tưởng, Kinh dị",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/WR7cc5t7tv8"
   },
   {
     id: 23,
@@ -181,7 +203,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/a_quiet_place_2.jpg",
     tyle:"Khoa học viễn tưởng, Kinh dị",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/BpdDN9d9Jio"
   },
   {
     id: 24,
@@ -189,7 +212,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/ke_cap_mat_trang_4.jpg",
     tyle:"Anime, Khoa học viễn tưởng",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/qQlr9-rF32A"
   },
   {
     id: 25,
@@ -197,7 +221,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/deadpool_3.jpg",
     tyle:"Khoa học viễn tưởng, Hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/73_1biulkYk"
   },
   {
     id: 26,
@@ -205,7 +230,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/joker_1.jpg",
     tyle:"Khoa học viễn tưởng, tâm lý học",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/euT7j0xnnC8"
   },
   {
     id: 27,
@@ -213,7 +239,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/joker_2.jpg",
     tyle:"Khoa học viễn tưởng, tâm lý học",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/_OKAwz2MsJs"
   },
   {
     id: 28,
@@ -221,7 +248,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/venom_1.jpg",
     tyle:"Khoa học viễn tưởng, Hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/u9Mv98Gr5pY"
   },
   {
     id: 29,
@@ -229,7 +257,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/venom_2.jpg",
     tyle:"Khoa học viễn tưởng, Hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/-FmWuCgJmxo"
   },
   {
     id: 30,
@@ -237,7 +266,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/venom_3.jpg",
     tyle:"Khoa học viễn tưởng, Hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/__2bjWbetsA"
   },
   {
     id: 31,
@@ -245,7 +275,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/superman_2025.jpg",
     tyle:"Khoa học viễn tưởng, Hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/Ox8ZLF6cGM0"
   },
   {
     id: 32,
@@ -253,7 +284,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/fantastic_4.jpg",
     tyle:"Khoa học viễn tưởng, Hành động",
     native:"Mỹ",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/18QQWa5MEcs"
   },
   {
     id: 33,
@@ -261,7 +293,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/demon_slayer_vo_han_thanh.jpg",
     tyle:"Anime, Hành động",
     native:"Nhật Bản",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/x7uLutVRBfI"
   },
   {
     id: 34,
@@ -269,7 +302,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/one_pieces_red.jpg",
     tyle:"Anime, Hành động",
     native:"Nhật Bản",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/r0FvP_Ui-xY"
   },
   {
     id: 35,
@@ -277,7 +311,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/conan_27.jpg",
     tyle:"Anime, Hành động",
     native:"Nhật Bản",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/C4pG3GbhQZw"
   },
   {
     id: 36,
@@ -285,7 +320,8 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/conan_28.jpg",
     tyle:"Anime, Hành động",
     native:"Nhật Bản",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/LQYpLcz53pQ"
   },
   {
     id: 37,
@@ -293,6 +329,7 @@ const kho_phim = [
     thumbnail: "assets/thumbnails/jjk_movie_0.jpg",
     tyle:"Anime, Hành động",
     native:"Nhật Bản",
-    video: "assets/videos/endgame.mp4"
+    video: "",
+    trailer:"https://www.youtube.com/embed/UPRqnFnnrr8"
   },
 ];

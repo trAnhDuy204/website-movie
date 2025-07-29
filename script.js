@@ -6,10 +6,10 @@ phim_noi_bat.forEach(movie => {
   card.className = "bg-gray-800 rounded-xl overflow-hidden shadow-md hover:scale-105 transition cursor-pointer";
   card.innerHTML = `
     <img src="${movie.thumbnail}" alt="${movie.title}"
-         class="movie"/>
+         class="movie w-full h-80 object-cover"/>
 
-    <div class="p-4 flex flex-col items-center">
-      <h3 class="movie_title">${movie.title}</h3>
+    <div class="p-4 text-center">
+      <h3 class="movie_title text-lg font-semibold">${movie.title}</h3>
     </div>
   `;
 
@@ -28,10 +28,10 @@ phim_chieu_rap.forEach(movie => {
   card.className = "bg-gray-800 rounded-xl overflow-hidden shadow-md hover:scale-105 transition cursor-pointer";
   card.innerHTML = `
     <img src="${movie.thumbnail}" alt="${movie.title}"
-         class="movie"/>
+         class="movie w-full h-80 object-cover"/>
 
-    <div class="p-4 flex flex-col items-center">
-      <h3 class="movie_title">${movie.title}</h3>
+    <div class="p-4 text-center">
+      <h3 class="movie_title text-lg font-semibold">${movie.title}</h3>
     </div>
   `;
 
@@ -50,10 +50,10 @@ phim_le.forEach(movie => {
   card.className = "bg-gray-800 rounded-xl overflow-hidden shadow-md hover:scale-105 transition cursor-pointer";
   card.innerHTML = `
     <img src="${movie.thumbnail}" alt="${movie.title}"
-         class="movie"/>
+         class="movie w-full h-80 object-cover"/>
 
-    <div class="p-4 flex flex-col items-center">
-      <h3 class="movie_title">${movie.title}</h3>
+    <div class="p-4 text-center">
+      <h3 class="movie_title text-lg font-semibold">${movie.title}</h3>
     </div>
   `;
 
@@ -72,10 +72,10 @@ phim_anime.forEach(movie => {
   card.className = "bg-gray-800 rounded-xl overflow-hidden shadow-md hover:scale-105 transition cursor-pointer";
   card.innerHTML = `
     <img src="${movie.thumbnail}" alt="${movie.title}"
-         class="movie"/>
+         class="movie w-full h-80 object-cover"/>
 
-    <div class="p-4 flex flex-col items-center">
-      <h3 class="movie_title">${movie.title}</h3>
+    <div class="p-4 text-center">
+      <h3 class="movie_title text-lg font-semibold">${movie.title}</h3>
     </div>
   `;
 

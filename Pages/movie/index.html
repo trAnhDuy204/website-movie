@@ -4,25 +4,80 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Xem phim</title>
+  <link rel="stylesheet" href="style.css"/>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-white min-h-screen flex flex-col items-center justify-center">
-  <div class="w-full max-w-4xl px-4">
-    <h1 id="movie-title" class="text-2xl md:text-4xl font-bold text-center mb-4"></h1>
-    <video id="video-player" controls class="w-full rounded-xl shadow-lg"></video>
-  </div>
-  <script src="data.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const movieId = parseInt(params.get("id"));
-    const movie = movies.find((m) => m.id === movieId);
-    if (movie) {
-      document.getElementById("movie-title").textContent = movie.title;
-      document.getElementById("video-player").src = movie.video;
-    } else {
-      document.body.innerHTML = "<h2 class='text-center mt-10 text-xl text-red-500'>Phim không tồn tại!</h2>";
-    }
-  </script>
+
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+
+  <header class="bg-gray-900 text-white shadow">
+    <div class="header_banner mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="header_logo">
+        <div class="flex items-center space-x-2">
+          <a href="../../index.html"><img src="../../assets/thumbnails/logo.jpg" alt="Logo" class="h-20 w-auto object-contain"/></a>
+          <div>
+            <h1 class="text-xl font-bold tracking-wide">
+              <a href="../../index.html"><span class="text-red-500">CHILL</span>X</a>
+            </h1>
+            <span class="text-sm text-gray-300 tracking-widest">XEM PHIM ONLINE</span>
+          </div>
+        </div>
+      </div>
+
+      <form action="../../Pages/search/index.html" method="get" class="flex">
+        <input type="text" name="q" placeholder="Nhập tên phim..." class="flex-1 px-4 py-2 rounded-l-lg text-black focus:outline-none" />
+        <button type="submit" class="bg-red-500 hover:bg-red-700 text-white px-4 py-2 rounded-r-lg">Tìm 🔍</button>
+      </form>
+
+      <div class="header_right flex items-center space-x-4 text-sm">
+        <a href="../../Pages/login/index.html" class="hover:text-red-500 flex items-center gap-1">Đăng nhập</a>
+        <a href="../../Pages/register/index.html" class="hover:text-red-500 flex items-center gap-1">Đăng ký</a>
+        <a href="#" class="hover:text-red-500 flex items-center gap-1">Phim yêu thích</a>
+      </div>
+    </div>
+
+    <nav class="header_menu bg-gray-800">
+      <div class="header_menu_container max-w-7xl mx-auto px-4">
+        <ul class="flex space-x-6 text-sm font-semibold text-white py-3">
+          <li><a href="../../index.html" class="hover:text-red-500">TRANG CHỦ</a></li>
+          <li class="relative" id="dropdownGenre">
+            <button onclick="toggleDropdown('genreMenu')" class="hover:text-red-500">THỂ LOẠI ▾</button>
+            <ul id="genreMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
+                onmouseenter="cancelClose('genreMenu')" onmouseleave="closeDropdown('genreMenu')">
+              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hành động</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Tình cảm</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hài hước</a></li>
+            </ul>
+          </li>
+          <li class="relative" id="dropdownNation">
+            <button onclick="toggleDropdown('nationMenu')" class="hover:text-red-500">QUỐC GIA ▾</button>
+            <ul id="nationMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
+                onmouseenter="cancelClose('nationMenu')" onmouseleave="closeDropdown('nationMenu')">
+              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Việt Nam</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hàn Quốc</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Mỹ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow flex items-center justify-center py-8 px-4">
+    <div class="w-full max-w-4xl">
+      <h1 id="movie-title" class="text-2xl md:text-4xl font-bold text-center mb-4"></h1>
+
+      <video id="video-player" controls class="w-full rounded-xl shadow-lg hidden"></video>
+
+      <iframe id="youtube-player" class="w-full aspect-video rounded-xl shadow-lg hidden"
+              src="" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </main>
+
+  <script src="../../data/data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-

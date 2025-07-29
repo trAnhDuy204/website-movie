@@ -27,7 +27,7 @@
             <form action="Pages/search/index.html" method="get" class="flex">
                 <input type="text" name="q" placeholder="Nhập tên phim..."
                         class="flex-1 px-4 py-2 rounded-l-lg text-black focus:outline-none" />
-                <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white px-4 py-2 rounded-r-lg">
+                <button type="submit" class="bg-red-500 hover:bg-red-700 text-white px-4 py-2 rounded-r-lg">
                     Tìm 🔍
                 </button>
             </form>
@@ -37,7 +37,7 @@
             <div class="header_right flex items-center space-x-4 text-sm">
             <a href="./Pages/login/index.html" class="hover:text-red-500 flex items-center gap-1">Đăng nhập</a>
             <a href="./Pages/register/index.html" class="hover:text-red-500 flex items-center gap-1">Đăng ký</a>
-            <a href="#" class="hover:text-red-500 flex items-center gap-1">Bookmark</a>
+            <a href="#" class="hover:text-red-500 flex items-center gap-1">Phim yêu thích</a>
             </div>
         </div>
 
@@ -66,34 +66,34 @@
                     </ul>
                 </li>
 
-                <li><a href="#" class="hover:text-red-500">PHIM NỔI BẬT</a></li>
-                <li><a href="#" class="hover:text-red-500">PHIM CHIẾU RẠP</a></li>
-                <li><a href="#" class="hover:text-red-500">PHIM LẺ</a></li>
-                <li><a href="#" class="hover:text-red-500">PHIM ANIME</a></li>
+                <li><a href="#phim_noi_bat" class="hover:text-red-500">PHIM NỔI BẬT</a></li>
+                <li><a href="#phim_moi_chieu_rap" class="hover:text-red-500">PHIM CHIẾU RẠP</a></li>
+                <li><a href="#phim_le" class="hover:text-red-500">PHIM LẺ</a></li>
+                <li><a href="#phim_anime" class="hover:text-red-500">PHIM ANIME</a></li>
             </ul>
           </div>
         </nav>
     </header>
     <section class="phim_noi_bat">
-        <h1 class="text-3xl font-bold text-center my-8">Phim nổi bật</h1>
+        <h1 class="text-3xl font-bold text-center my-8">PHIM NỔI BẬT</h1>
         <div id="phim_noi_bat" class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto px-4"></div>
     </section>
 
     <section class="phim_moi_chieu_rap">
-        <h1 class="text-3xl font-bold text-center my-8">Phim mới chiếu rạp</h1>
+        <h1 class="text-3xl font-bold text-center my-8">PHIM CHIẾU RẠP</h1>
         <div id="phim_moi_chieu_rap" class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto px-4"></div>
     </section>
 
     <section class="phim_le">
-        <h1 class="text-3xl font-bold text-center my-8">Phim lẻ</h1>
+        <h1 class="text-3xl font-bold text-center my-8">PHIM LẺ</h1>
         <div id="phim_le" class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto px-4"></div>
     </section>
 
     <section class="phim_anime">
-        <h1 class="text-3xl font-bold text-center my-8">Phim Anime</h1>
+        <h1 class="text-3xl font-bold text-center my-8">PHIM ANIME</h1>
         <div id="phim_anime" class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto px-4"></div>
     </section>
-    
+
     <script src="./data/data.js"></script>
     <script src="./data/phimAnime.js"></script>
     <script src="./data/phimChieuRap.js"></script>
