@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kết quả tìm kiếm</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Phim Yêu Thích</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white min-h-screen">
@@ -21,6 +20,14 @@
                     </div>
                 </div>
             </div>
+
+            <form action="../search/index.html" method="get" class="flex">
+                <input type="text" name="q" placeholder="Nhập tên phim..."
+                        class="flex-1 px-4 py-2 rounded-l-lg text-black focus:outline-none" />
+                <button type="submit" class="bg-red-500 hover:bg-red-700 text-white px-4 py-2 rounded-r-lg">
+                    Tìm 🔍
+                </button>
+            </form>
             
             <div class="header_right flex items-center space-x-4 text-sm">
               <a href="../login/index.html" class="hover:text-red-500 flex items-center gap-1">Đăng nhập</a>
@@ -38,11 +45,11 @@
                     <button onclick="toggleDropdown('genreMenu')" class="hover:text-red-500">THỂ LOẠI ▾</button>
                     <ul id="genreMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
                         onmouseenter="cancelClose('genreMenu')" onmouseleave="closeDropdown('genreMenu')">
-                        <li><a href="#" data-genre="Hành động" class="block px-4 py-2 hover:bg-red-500">Hành động</a></li>
-                        <li><a href="#" data-genre="Tình cảm" class="block px-4 py-2 hover:bg-red-500">Tình cảm</a></li>
-                        <li><a href="#" data-genre="Hài hước" class="block px-4 py-2 hover:bg-red-500">Hài hước</a></li>
-                        <li><a href="#" data-genre="Kinh dị" class="block px-4 py-2 hover:bg-red-500">Kinh dị</a></li>
-                        <li><a href="#" data-genre="Khoa học viễn tưởng" class="block px-4 py-2 hover:bg-red-500">Khoa học viễn tưởng</a></li>
+                        <li><a href="../search/index.html?genre=Hành động" class="block px-4 py-2 hover:bg-red-500">Hành động</a></li>
+                        <li><a href="../search/index.html?genre=Tình cảm" class="block px-4 py-2 hover:bg-red-500">Tình cảm</a></li>
+                        <li><a href="../search/index.html?genre=Hài hước" class="block px-4 py-2 hover:bg-red-500">Hài hước</a></li>
+                        <li><a href="../search/index.html?genre=Kinh dị" class="block px-4 py-2 hover:bg-red-500">Kinh dị</a></li>
+                        <li><a href="../search/index.html?genre=Khoa học viễn tưởng"class="block px-4 py-2 hover:bg-red-500">Khoa học viễn tưởng</a></li>
                     </ul>
                 </li>
 
@@ -50,14 +57,14 @@
                     <button onclick="toggleDropdown('nationMenu')" class="hover:text-red-500">QUỐC GIA ▾</button>
                     <ul id="nationMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
                         onmouseenter="cancelClose('nationMenu')" onmouseleave="closeDropdown('nationMenu')">
-                        <li><a href="#" data-nation="Việt Nam" class="block px-4 py-2 hover:bg-red-500">Việt Nam</a></li>
-                        <li><a href="#" data-nation="Hàn Quốc" class="block px-4 py-2 hover:bg-red-500">Hàn Quốc</a></li>
-                        <li><a href="#" data-nation="Mỹ" class="block px-4 py-2 hover:bg-red-500">Mỹ</a></li>
-                        <li><a href="#" data-nation="Anh" class="block px-4 py-2 hover:bg-red-500">Anh</a></li>
-                        <li><a href="#" data-nation="Ý" class="block px-4 py-2 hover:bg-red-500">Ý</a></li>
-                        <li><a href="#" data-nation="Pháp" class="block px-4 py-2 hover:bg-red-500">Pháp</a></li>
-                        <li><a href="#" data-nation="Đài Loan" class="block px-4 py-2 hover:bg-red-500">Đài Loan</a></li>
-                        <li><a href="#" data-nation="Nhật Bản" class="block px-4 py-2 hover:bg-red-500">Nhật Bản</a></li>
+                        <li><a href="../search/index.html?nation=Việt Nam" class="block px-4 py-2 hover:bg-red-500">Việt Nam</a></li>
+                        <li><a href="../search/index.html?nation=Hàn Quốc" class="block px-4 py-2 hover:bg-red-500">Hàn Quốc</a></li>
+                        <li><a href="../search/index.html?nation=Mỹ" class="block px-4 py-2 hover:bg-red-500">Mỹ</a></li>
+                        <li><a href="../search/index.html?nation=Anh" class="block px-4 py-2 hover:bg-red-500">Anh</a></li>
+                        <li><a href="../search/index.html?nation=Ý" class="block px-4 py-2 hover:bg-red-500">Ý</a></li>
+                        <li><a href="../search/index.html?nation=Pháp" class="block px-4 py-2 hover:bg-red-500">Pháp</a></li>
+                        <li><a href="../search/index.html?nation=Đài Loan" class="block px-4 py-2 hover:bg-red-500">Đài Loan</a></li>
+                        <li><a href="../search/index.html?nation=Nhật Bản" class="block px-4 py-2 hover:bg-red-500">Nhật Bản</a></li>
                     </ul>
                 </li>
             </ul>
@@ -65,23 +72,13 @@
         </nav>
     </header>
 
-  <div class="max-w-4xl mx-auto p-6">
-    <div class="flex mb-6">
-      <input id="searchInput" type="text" placeholder="Nhập tên phim..."
-        class="flex-1 px-4 py-2 rounded-l-lg text-black focus:outline-none" />
-      <button id="searchButton"
-        class="bg-red-500 hover:bg-red-700 text-white px-4 py-2 rounded-r-lg">
-        Tìm 🔍
-      </button>
-    </div>
+  <div class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-center mb-6">Danh sách phim yêu thích</h1>
+    <div id="favoriteList" class="grid grid-cols-2 md:grid-cols-5 gap-6"></div>
   </div>
-  <section class="ket_qua_tim_kiem py-10">
-    <h1 class="text-3xl font-bold text-center my-8">Kết quả tìm kiếm</h1>
-    <div id="searchResults" class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto px-4"></div>
-  </section>
+
   <script src="../../data/data.js"></script>
   <script src="../../favorite.js"></script>
-  <script src="../movie/index.html"></script>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

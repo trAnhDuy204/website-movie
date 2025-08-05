@@ -40,24 +40,33 @@
       <div class="header_menu_container max-w-7xl mx-auto px-4">
         <ul class="flex space-x-6 text-sm font-semibold text-white py-3">
           <li><a href="../../index.html" class="hover:text-red-500">TRANG CHỦ</a></li>
-          <li class="relative" id="dropdownGenre">
-            <button onclick="toggleDropdown('genreMenu')" class="hover:text-red-500">THỂ LOẠI ▾</button>
-            <ul id="genreMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
+
+           <li class="relative" id="dropdownGenre">
+              <button onclick="toggleDropdown('genreMenu')" class="hover:text-red-500">THỂ LOẠI ▾</button>
+              <ul id="genreMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
                 onmouseenter="cancelClose('genreMenu')" onmouseleave="closeDropdown('genreMenu')">
-              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hành động</a></li>
-              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Tình cảm</a></li>
-              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hài hước</a></li>
-            </ul>
-          </li>
-          <li class="relative" id="dropdownNation">
-            <button onclick="toggleDropdown('nationMenu')" class="hover:text-red-500">QUỐC GIA ▾</button>
-            <ul id="nationMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
+                <li><a href="../search/index.html?genre=Hành động" class="block px-4 py-2 hover:bg-red-500">Hành động</a></li>
+                <li><a href="../search/index.html?genre=Tình cảm" class="block px-4 py-2 hover:bg-red-500">Tình cảm</a></li>
+                <li><a href="../search/index.html?genre=Hài hước" class="block px-4 py-2 hover:bg-red-500">Hài hước</a></li>
+                <li><a href="../search/index.html?genre=Kinh dị" class="block px-4 py-2 hover:bg-red-500">Kinh dị</a></li>
+                <li><a href="../search/index.html?genre=Khoa học viễn tưởng"class="block px-4 py-2 hover:bg-red-500">Khoa học viễn tưởng</a></li>
+              </ul>
+            </li>
+
+            <li class="relative" id="dropdownNation">
+              <button onclick="toggleDropdown('nationMenu')" class="hover:text-red-500">QUỐC GIA ▾</button>
+              <ul id="nationMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
                 onmouseenter="cancelClose('nationMenu')" onmouseleave="closeDropdown('nationMenu')">
-              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Việt Nam</a></li>
-              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hàn Quốc</a></li>
-              <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Mỹ</a></li>
-            </ul>
-          </li>
+                <li><a href="../search/index.html?nation=Việt Nam" class="block px-4 py-2 hover:bg-red-500">Việt Nam</a></li>
+                <li><a href="../search/index.html?nation=Hàn Quốc" class="block px-4 py-2 hover:bg-red-500">Hàn Quốc</a></li>
+                <li><a href="../search/index.html?nation=Mỹ" class="block px-4 py-2 hover:bg-red-500">Mỹ</a></li>
+                <li><a href="../search/index.html?nation=Anh" class="block px-4 py-2 hover:bg-red-500">Anh</a></li>
+                <li><a href="../search/index.html?nation=Ý" class="block px-4 py-2 hover:bg-red-500">Ý</a></li>
+                <li><a href="../search/index.html?nation=Pháp" class="block px-4 py-2 hover:bg-red-500">Pháp</a></li>
+                <li><a href="../search/index.html?nation=Đài Loan" class="block px-4 py-2 hover:bg-red-500">Đài Loan</a></li>
+                <li><a href="../search/index.html?nation=Nhật Bản" class="block px-4 py-2 hover:bg-red-500">Nhật Bản</a></li>
+              </ul>
+            </li>
         </ul>
       </div>
     </nav>

@@ -30,37 +30,17 @@ if (movie) {
   document.body.innerHTML = "<h2 class='text-center mt-10 text-xl text-red-500'>Phim không tồn tại!</h2>";
 }
 
-// tạo Dropdown
-let closeTimeout = {};
-//Hàm bật tắt dropdown
+//tạo dropdown list
+// Hàm bật/tắt dropdown
 function toggleDropdown(id) {
-  const menu = document.getElementById(id);
-  const isOpen = !menu.classList.contains('hidden');
-  closeAllDropdowns();
-  if (!isOpen) menu.classList.remove('hidden');
+    const menu = document.getElementById(id); // Lấy element của menu cần hiển thị
+    const isOpen = !menu.classList.contains('hidden'); // Kiểm tra menu hiện tại có đang mở không (ẩn = có class 'hidden')
+    closeAllDropdowns(); // Đóng tất cả dropdown khác
+    if (!isOpen) menu.classList.remove('hidden'); // Nếu menu đang ẩn, thì hiển thị ra (bỏ class 'hidden')
 }
-//Hàm đóng dropdown
-function closeDropdown(id) {
-  closeTimeout[id] = setTimeout(() => {
-    document.getElementById(id).classList.add('hidden');
-  }, 200);
-}
-
-function cancelClose(id) {
-  clearTimeout(closeTimeout[id]);
-}
-
+// Đóng tất cả dropdown menu đang mở
 function closeAllDropdowns() {
-  ['genreMenu', 'nationMenu'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.classList.add('hidden');
-  });
+    ['genreMenu', 'nationMenu'].forEach(id => {
+        document.getElementById(id).classList.add('hidden'); // Ẩn tất cả bằng cách thêm class 'hidden'
+    });
 }
-
-// Ẩn dropdown nếu click ra ngoài
-document.addEventListener('click', function (e) {
-  const ids = ['dropdownGenre', 'dropdownNation'];
-  if (!ids.some(id => document.getElementById(id)?.contains(e.target))) {
-    closeAllDropdowns();
-  }
-});

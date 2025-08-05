@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Phim Online</title>
+  <title>CHILLX Xem phim Online</title>
   <link rel="stylesheet" href="./style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white">
-    <header class="bg-gray-900 text-white shadow">
+    <header class="sticky top-0 z-50 bg-gray-900 text-white shadow">
         <div class="header_banner mx-auto px-4 py-3 flex items-center justify-between">
 
             <div class="header_logo">
@@ -37,7 +37,7 @@
             <div class="header_right flex items-center space-x-4 text-sm">
             <a href="./Pages/login/index.html" class="hover:text-red-500 flex items-center gap-1">Đăng nhập</a>
             <a href="./Pages/register/index.html" class="hover:text-red-500 flex items-center gap-1">Đăng ký</a>
-            <a href="#" class="hover:text-red-500 flex items-center gap-1">Phim yêu thích</a>
+            <a href="./Pages/favorites/index.html" class="hover:text-red-500 flex items-center gap-1">Phim yêu thích</a>
             </div>
         </div>
 
@@ -50,9 +50,11 @@
                     <button onclick="toggleDropdown('genreMenu')" class="hover:text-red-500">THỂ LOẠI ▾</button>
                     <ul id="genreMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
                         onmouseenter="cancelClose('genreMenu')" onmouseleave="closeDropdown('genreMenu')">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hành động</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Tình cảm</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hài hước</a></li>
+                        <li><a href="./Pages/search/index.html?genre=Hành động" class="block px-4 py-2 hover:bg-red-500">Hành động</a></li>
+                        <li><a href="./Pages/search/index.html?genre=Tình cảm" class="block px-4 py-2 hover:bg-red-500">Tình cảm</a></li>
+                        <li><a href="./Pages/search/index.html?genre=Hài hước" class="block px-4 py-2 hover:bg-red-500">Hài hước</a></li>
+                        <li><a href="./Pages/search/index.html?genre=Kinh dị" class="block px-4 py-2 hover:bg-red-500">Kinh dị</a></li>
+                        <li><a href="./Pages/search/index.html?genre=Khoa học viễn tưởng"class="block px-4 py-2 hover:bg-red-500">Khoa học viễn tưởng</a></li>
                     </ul>
                 </li>
 
@@ -60,9 +62,14 @@
                     <button onclick="toggleDropdown('nationMenu')" class="hover:text-red-500">QUỐC GIA ▾</button>
                     <ul id="nationMenu" class="absolute hidden top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl w-48 z-50 text-left"
                         onmouseenter="cancelClose('nationMenu')" onmouseleave="closeDropdown('nationMenu')">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Việt Nam</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Hàn Quốc</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-500">Mỹ</a></li>
+                        <li><a href="Pages/search/index.html?nation=Việt Nam" class="block px-4 py-2 hover:bg-red-500">Việt Nam</a></li>
+                        <li><a href="Pages/search/index.html?nation=Hàn Quốc" class="block px-4 py-2 hover:bg-red-500">Hàn Quốc</a></li>
+                        <li><a href="Pages/search/index.html?nation=Mỹ" class="block px-4 py-2 hover:bg-red-500">Mỹ</a></li>
+                        <li><a href="Pages/search/index.html?nation=Anh" class="block px-4 py-2 hover:bg-red-500">Anh</a></li>
+                        <li><a href="Pages/search/index.html?nation=Ý" class="block px-4 py-2 hover:bg-red-500">Ý</a></li>
+                        <li><a href="Pages/search/index.html?nation=Pháp" class="block px-4 py-2 hover:bg-red-500">Pháp</a></li>
+                        <li><a href="Pages/search/index.html?nation=Đài Loan" class="block px-4 py-2 hover:bg-red-500">Đài Loan</a></li>
+                        <li><a href="Pages/search/index.html?nation=Nhật Bản" class="block px-4 py-2 hover:bg-red-500">Nhật Bản</a></li>
                     </ul>
                 </li>
 
@@ -99,7 +106,9 @@
     <script src="./data/phimChieuRap.js"></script>
     <script src="./data/phimLe.js"></script>
     <script src="./data/phimNoiBat.js"></script>
+    <script src="./favorite.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>
 
